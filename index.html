@@ -1,0 +1,53 @@
+<<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gallery of Horny Creatures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      href="https://fonts.googleapis.com/css?family=Righteous"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/layouts.css" />
+    <link rel="stylesheet" type="text/css" href="css/modules.css" />
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.js"></script>
+    <script id="image-template" type="text/x-handlebars-template">
+      <section class="image" data-keyword="{{data_keyword}}">
+        <h2>{{title}}</h2>
+        <img src="{{image_url}}"/>
+        <p>{{description}}</p>
+        <p># Of Horns: {{horns}}</p>
+      </section>
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Gallery of Horns</h1>
+      <select id="filter">
+        <optgroup label="Filter by Keyword">
+          <option value="default">All</option>
+        </optgroup>
+        <optgroup label="Sort by Title or Horns">
+          <option value="a-to-z">A-Z</option>
+          <option value="z-to-a">Z-A</option>
+          <option value="high-to-low">High to Low</option>
+          <option value="low-to-high">Low to High</option>
+        </optgroup>
+      </select>
+	  <h3>Number of Pages</h3>
+      <nav id="image-pages"></nav>
+    </header>
+    <main class="flex">
+      <!-- Images go here -->
+    </main>
+    <footer>
+      &copy; 2019 DeltaV Code Cedar Rapids, Iowa
+    </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="./js/app.js" type="text/javascript"></script>
+  </body>
+</html>

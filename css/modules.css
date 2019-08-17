@@ -1,0 +1,22 @@
+section h2 {
+  margin: auto;
+  margin-bottom: 7px;
+  font-size: 2rem;
+  font-family: 'Righteous', cursive;
+  color: #eee;
+}
+section img {
+  width: 60%;
+  margin-left: 20%;
+}
+
+section p {
+  vertical-align: bottom;
+}
+.image:hover {
+  transform: scale(1.1);
+}
+
+.image:hover ~ h2 {
+  display: block;
+}
